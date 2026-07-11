@@ -1,0 +1,23 @@
+        Ticket 13: Track Video Engagement
+
+        Scenario
+        A product demo video needs play, pause, and 25/50/75/100% watched milestones recorded, with each milestone reported only once per viewing.
+
+        Concepts
+        Set, event objects, percentage math, mock media state
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a "Restart" control that resets currentTime to 0 and clears the reached-milestones Set so they can be recorded again.
+
+        Definition of done
+        - Clicking Play logs a video_play event and clicking Pause logs a video_pause event
+        - Jumping to a point in the video logs each 25/50/75/100 milestone only once
+        - Milestones already reached are not reported again after jumping backward
+        - The event inspector shows the most recent event object

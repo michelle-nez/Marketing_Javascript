@@ -1,0 +1,23 @@
+        Ticket 18: Social Proof Activity Toast
+
+        Scenario
+        Marketing wants rotating "Someone just signed up" style toasts to build trust, cycling through a small dataset every few seconds without stacking multiple toasts on screen.
+
+        Concepts
+        arrays, setInterval, template literals, DOM node reuse
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Make each toast auto-hide after 4 seconds instead of being replaced instantly by the next one, with a short gap between toasts.
+
+        Definition of done
+        - Toasts rotate through the sample activity list automatically
+        - Only one toast is visible on screen at a time
+        - Reaching the end of the list loops back to the first activity
+        - The Stop button stops the rotation and Start resumes it

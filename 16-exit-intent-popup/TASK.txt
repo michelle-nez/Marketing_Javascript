@@ -1,0 +1,23 @@
+        Ticket 16: Build an Exit-Intent Offer Popup
+
+        Scenario
+        Marketing wants a one-time discount popup shown when a visitor's mouse moves toward the top of the browser like they're about to leave, without showing it more than once per visit.
+
+        Concepts
+        mouseout, clientY, sessionStorage, modal show/hide, keyboard accessibility
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a minimum "time on page" guard so the popup cannot appear within the first 3 seconds, even if the mouse leaves toward the top immediately.
+
+        Definition of done
+        - Moving the mouse toward the top of the window shows the popup once
+        - The popup does not show again for the rest of the session once dismissed or shown
+        - The close button, the Escape key, and clicking the backdrop all close the popup
+        - Claiming the offer logs an event and closes the popup

@@ -1,0 +1,23 @@
+        Ticket 24: Auto-Hide Sticky Header on Scroll
+
+        Scenario
+        A long marketing page needs a sticky header that hides while scrolling down (for more reading room) and reappears while scrolling up, but stays visible near the top of the page.
+
+        Concepts
+        scroll direction detection, requestAnimationFrame throttling, classList, thresholds
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a smooth CSS transition so the header slides away instead of disappearing instantly.
+
+        Definition of done
+        - Scrolling down past the threshold hides the header
+        - Scrolling up at any point reveals the header again
+        - The header stays visible whenever scrollY is below the top threshold
+        - Scroll handling is throttled with requestAnimationFrame instead of running on every raw scroll event

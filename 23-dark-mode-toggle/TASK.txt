@@ -1,0 +1,23 @@
+        Ticket 23: Dark Mode Toggle with Persistence
+
+        Scenario
+        The marketing site should follow the visitor's OS light/dark preference by default, but remember an explicit override if they pick one manually.
+
+        Concepts
+        matchMedia, classList, localStorage, three-state logic
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Make the page react live if the visitor changes their OS theme while "System" mode is active, using matchMedia's change event.
+
+        Definition of done
+        - With no saved preference, the page matches the OS light/dark setting
+        - Clicking the toggle cycles Light, then Dark, then System
+        - An explicit Light or Dark choice is remembered after refreshing
+        - Choosing System clears any saved override and follows the OS setting again

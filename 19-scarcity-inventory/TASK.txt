@@ -1,0 +1,23 @@
+        Ticket 19: Live Scarcity and Inventory Indicator
+
+        Scenario
+        A product page should show "Only X left" messaging driven by a shared stock count, growing more urgent as stock drops, and disable the buy button once stock reaches zero.
+
+        Concepts
+        state variables, conditional messaging, template literals, disabling controls
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a "Restock" button (for testing only) that resets stock to 15 and re-enables the buy button.
+
+        Definition of done
+        - Stock above 10 shows a plain "In stock" message
+        - Stock from 1 to 10 shows "Only N left!" with urgent styling
+        - Stock at 0 shows "Sold out", disables the buy button, and stops further purchases
+        - Each simulated purchase pushes an inventory_change event with the new stock count

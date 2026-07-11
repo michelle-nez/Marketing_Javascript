@@ -1,0 +1,23 @@
+        Ticket 12: Track Form Abandonment
+
+        Scenario
+        Sales wants to know which required fields visitors leave empty before giving up on the contact form, so they can find friction points without collecting anything they typed.
+
+        Concepts
+        focus, blur, Set, form validation, event objects
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a "time to first interaction" measurement: record how many seconds passed between page load and the first field focus.
+
+        Definition of done
+        - Leaving a required field blank after focusing it marks that field as abandoned
+        - Filling a previously abandoned field clears its abandoned status
+        - Clicking "Simulate leaving the page" reports only the fields still empty
+        - A successful submit reports form_submitted instead of an abandonment event

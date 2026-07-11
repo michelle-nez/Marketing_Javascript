@@ -1,0 +1,23 @@
+        Ticket 22: Monthly and Annual Pricing Toggle
+
+        Scenario
+        The pricing page needs a toggle between monthly and annual billing that recalculates each plan's displayed price and shows the annual savings.
+
+        Concepts
+        checkbox input, math, DOM text updates, localStorage
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Show the total annual price (per-month price times 12) as a small line under each plan when annual billing is selected.
+
+        Definition of done
+        - Toggling to annual reduces every plan's displayed price by the discount rate
+        - Toggling back to monthly restores the original prices
+        - A "Save 20%" badge only shows while annual billing is selected
+        - The toggle's last state is remembered after refreshing the page

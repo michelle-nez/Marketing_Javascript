@@ -1,0 +1,23 @@
+        Ticket 15: Capture Referral and Affiliate Attribution
+
+        Scenario
+        The affiliate program needs credit to stick to the first referral link a visitor clicked, even if they browse a few pages before signing up.
+
+        Concepts
+        URLSearchParams, localStorage, first-touch attribution, timestamps
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a configurable attribution window: if the stored first-touch timestamp is older than 30 days, treat it as expired and capture a new referral code instead.
+
+        Definition of done
+        - Visiting with a ref or aff parameter stores it only if nothing is stored yet
+        - Visiting again with a different code does not overwrite the original stored code
+        - Clicking Sign up reports the stored referral code and days since first touch
+        - Clear attribution removes the stored value so a new code can be captured

@@ -1,0 +1,23 @@
+        Ticket 26: Conditional Pixel Loading with Dedupe
+
+        Scenario
+        A retargeting pixel should only "fire" after marketing consent is granted, and never fire more than once for the same page view — even on a single-page app where the same view can re-render several times.
+
+        Concepts
+        Set, consent gating, dedupe keys, simulated SPA route changes
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a "Clear fired history" button (for testing only) that empties the fired-pageviews Set so every page id can fire again.
+
+        Definition of done
+        - The pixel never fires while marketing consent is off
+        - Turning consent on and simulating a route change fires the pixel for that page id
+        - Simulating the same route again does not fire the pixel a second time
+        - A genuinely new page id fires the pixel again

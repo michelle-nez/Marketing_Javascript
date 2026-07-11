@@ -1,0 +1,23 @@
+        Ticket 25: Granular Cookie Consent Banner
+
+        Scenario
+        Compliance requires a banner with separate Necessary/Analytics/Marketing categories. Analytics and Marketing trackers should only initialize once their specific category is granted.
+
+        Concepts
+        object state, checkboxes, localStorage, conditional initialization
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a "Reject all" button that saves every optional category as false and applies consent immediately.
+
+        Definition of done
+        - Necessary is always granted and its checkbox cannot be unchecked
+        - Saving preferences only "loads" Analytics or Marketing when their checkbox is checked
+        - Accept All grants every category and applies consent immediately
+        - The saved preferences are restored (checkboxes and status text) after refreshing the page

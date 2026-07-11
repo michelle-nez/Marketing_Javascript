@@ -1,0 +1,23 @@
+        Ticket 14: Report Core Web Vitals
+
+        Scenario
+        Marketing's SEO push depends on page-speed metrics. The team wants a page-load report that classifies LCP, CLS, and INP as good, needs-improvement, or poor using Google's published thresholds.
+
+        Concepts
+        functions, thresholds, object mapping, conditional classification, template literals
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a fourth metric, TTFB (Time to First Byte), with thresholds good <= 800ms, needs-improvement <= 1800ms, else poor.
+
+        Definition of done
+        - Clicking "Simulate page load" generates a value for LCP, CLS, and INP
+        - Each metric is classified as good, needs-improvement, or poor using the correct thresholds
+        - A single web_vitals event is pushed containing all three metrics and their ratings
+        - The report visually distinguishes good from needs-improvement and poor

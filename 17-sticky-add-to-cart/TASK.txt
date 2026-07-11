@@ -1,0 +1,23 @@
+        Ticket 17: Sticky Add-to-Cart Bar
+
+        Scenario
+        On a long product page, the main Add to Cart button scrolls out of view. Marketing wants a sticky mini bar to appear once that happens so visitors can still buy without scrolling back up.
+
+        Concepts
+        IntersectionObserver, classList, scroll-based visibility, shared event handlers
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Fade the sticky bar in and out with a CSS transition instead of toggling it instantly.
+
+        Definition of done
+        - The sticky bar is hidden while the main Add to Cart button is visible on screen
+        - Scrolling past the main button reveals the sticky bar
+        - Scrolling back up to the main button hides the sticky bar again
+        - Both Add to Cart buttons push the same add_to_cart event shape

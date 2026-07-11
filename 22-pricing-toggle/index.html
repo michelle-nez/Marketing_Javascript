@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 22 — Monthly and Annual Pricing Toggle</title>
+  <link rel="stylesheet" href="../../shared/sample-styles.css" />
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 22</p>
+    <h1>Monthly and Annual Pricing Toggle</h1>
+    <p>Switch between monthly and annual billing and watch every plan's price update.</p>
+  </header>
+<main>
+  <section class="card">
+    <label for="billingToggle">
+      <input type="checkbox" id="billingToggle" style="width:auto; display:inline-block;" />
+      Bill annually <span id="saveBadge" class="pill hidden">Save 20%</span>
+    </label>
+  </section>
+  <section class="grid">
+    <div class="card" data-monthly-price="19">
+      <h2>Starter</h2>
+      <p class="price-display metric">$19/mo</p>
+    </div>
+    <div class="card" data-monthly-price="49">
+      <h2>Growth</h2>
+      <p class="price-display metric">$49/mo</p>
+    </div>
+    <div class="card" data-monthly-price="99">
+      <h2>Scale</h2>
+      <p class="price-display metric">$99/mo</p>
+    </div>
+  </section>
+</main><footer>Local training page. No real billing occurs here.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

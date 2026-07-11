@@ -1,0 +1,23 @@
+        Ticket 11: GA4-Style Ecommerce Event Tracking
+
+        Scenario
+        The analytics team wants view_item, add_to_cart, and purchase events pushed to window.dataLayer using a consistent item shape, so reports don't need custom field mapping for this page.
+
+        Concepts
+        objects, arrays, dataLayer, event naming conventions, reduce
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a remove_from_cart event that fires when a "Remove" control is clicked, using the same item shape.
+
+        Definition of done
+        - A view_item event fires once when the page loads
+        - Add to cart pushes an add_to_cart event with the same item shape as view_item
+        - Purchase pushes a purchase event with a transaction_id and a value equal to the cart total
+        - The cart resets after a purchase event fires

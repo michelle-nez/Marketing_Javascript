@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 23 — Dark Mode Toggle with Persistence</title>
+  <link rel="stylesheet" href="../../shared/sample-styles.css" />
+  <style>
+    html[data-theme="dark"] body { background: #0f1420; color: #e7ecf5; }
+    html[data-theme="dark"] .card { background: #171e2c; border-color: #2a3549; }
+    html[data-theme="dark"] p { color: #a8b3c7; }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 23</p>
+    <h1>Dark Mode Toggle with Persistence</h1>
+    <p>The page should follow your OS preference until you explicitly pick a mode.</p>
+  </header>
+<main>
+  <section class="card">
+    <h2>Theme</h2>
+    <button id="themeToggleBtn">Mode: System</button>
+  </section>
+  <section class="card">
+    <h2>Sample content</h2>
+    <p>This card's background and text color change with the active theme.</p>
+  </section>
+</main><footer>Local training page.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

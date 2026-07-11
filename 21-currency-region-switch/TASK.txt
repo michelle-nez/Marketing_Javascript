@@ -1,0 +1,23 @@
+        Ticket 21: Currency and Region Switcher
+
+        Scenario
+        The store sells to US, UK, and EU customers. A region dropdown should update every product's displayed price and currency at once, and remember the visitor's choice on return.
+
+        Concepts
+        object maps, Intl.NumberFormat, localStorage, re-rendering multiple elements
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a fourth region (Canada, CAD) with its own exchange rate and locale.
+
+        Definition of done
+        - Changing the region updates every product's price and currency symbol
+        - The selected region is remembered after refreshing the page
+        - Prices are formatted using Intl.NumberFormat for the selected locale
+        - A region_changed event is pushed whenever the visitor changes region

@@ -1,0 +1,23 @@
+        Ticket 20: Live Chat Widget Trigger Logic
+
+        Scenario
+        Support wants the chat bubble to appear after 8 seconds on page OR once a visitor scrolls past 50% of the page, whichever happens first, but it should never reappear once dismissed this session.
+
+        Concepts
+        setTimeout, scroll percentage, sessionStorage, clearing pending timers
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Record which trigger fired (timer or scroll) in the chat_widget_shown event's data.
+
+        Definition of done
+        - The bubble appears automatically after 8 seconds if the visitor hasn't scrolled far
+        - Scrolling past 50% of the page shows the bubble immediately and cancels the pending timer
+        - The bubble does not appear a second time after either trigger has fired once
+        - Dismissing the bubble hides it and prevents it from reappearing for the rest of the session
