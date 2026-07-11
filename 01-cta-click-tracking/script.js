@@ -7,7 +7,7 @@ const ctaButtons = document.querySelectorAll(".track-cta");
 ctaButtons.forEach((button) => {
     // Step 2: Add a click event listener
     button.addEventListener('click', () => {
-        alert(`Button ${button.textContent} clicked!`);
+        
         // TODO 3: Build an event object with event, ctaName, placement, and campaign.
         const eventData ={
             event: "cta_click",
@@ -15,9 +15,11 @@ ctaButtons.forEach((button) => {
             placement: button.dataset.placement,
             campaign: button.dataset.campaign
         };
-       // TODO 4: Push the object into window.dataLayer.
+       
+        // TODO 4: Push the object into window.dataLayer.
         window.dataLayer.push(eventData);
         eventLog.innerHTML = JSON.stringify(eventData, null, 2);
+        
         // TODO 5: Display the event object inside eventLog with JSON.stringify.
         console.log("CTA event:", eventData);
     });

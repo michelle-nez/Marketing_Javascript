@@ -10,6 +10,7 @@ form.addEventListener("submit", event => {
   // TODO 1: Read and trim name and email.
   const name = form.querySelector("#name").value.trim();
   const email = form.querySelector("#email").value.trim();
+
    // TODO 2: Read the selected interest.
   const interest = form.querySelector("#interest").value.trim();  
  
@@ -27,6 +28,7 @@ form.addEventListener("submit", event => {
     formName: form.dataset.formName,
     interest: interest
   };
+  
   // TODO 5: Push the event, show success, and reset the form.
   window.dataLayer.push(eventData);
   eventLog.textContent = JSON.stringify(eventData, null, 2);
