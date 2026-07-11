@@ -1,0 +1,21 @@
+        Ticket 04: Build and Track an Email Signup Modal
+
+        Scenario
+        Marketing needs an email-offer modal that opens intentionally, closes accessibly, and reports views, dismissals, and successful signups.
+
+        Concepts
+        classList, keyboard events, focus, modal state, multiple event types
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Close the modal when the user clicks the backdrop, but not when the user clicks inside the modal card.
+
+        Definition of done
+        - 
+Open button displays the modal- Not now and Escape close it- Focus moves into and back out of the modal- Signup records a separate event

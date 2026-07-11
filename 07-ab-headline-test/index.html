@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 07 — Run a Simple Headline A/B Test</title>
+  <link rel="stylesheet" href="../../shared/sample-styles.css" />
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 07</p>
+    <h1>Run a Simple Headline A/B Test</h1>
+    <p>Assign and preserve a test variant, then include it in analytics events.</p>
+  </header>
+<main>
+  <section class="card">
+    <span class="pill" id="variantLabel">Variant not assigned</span>
+    <h2 id="headline">Placeholder campaign headline</h2>
+    <p id="subheadline">The selected test copy will appear here.</p>
+    <button id="primaryCta">Request a consultation</button>
+    <button id="resetVariant" class="secondary">Reset test assignment</button>
+  </section>
+  <section class="card"><h2>Experiment event</h2><div id="eventLog" class="event-log">No event recorded.</div></section>
+</main><footer>Local training page. Events stay in your browser and are not sent to a real analytics service.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

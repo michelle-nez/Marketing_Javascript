@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 04 — Build and Track an Email Signup Modal</title>
+  <link rel="stylesheet" href="../../shared/sample-styles.css" />
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 04</p>
+    <h1>Build and Track an Email Signup Modal</h1>
+    <p>Create a controlled promotion instead of an untestable pop-up.</p>
+  </header>
+<main>
+  <section class="card">
+    <h2>Resource center</h2>
+    <p>Offer visitors a monthly operations newsletter.</p>
+    <button id="openModal">Get the newsletter</button>
+    <div id="eventLog" class="event-log">No modal event recorded.</div>
+  </section>
+</main>
+<div id="modalBackdrop" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <h2 id="modalTitle">Monthly operations insights</h2>
+    <p>Receive one practical article each month.</p>
+    <form id="signupForm">
+      <label for="signupEmail">Email</label>
+      <input id="signupEmail" name="email" type="email" required />
+      <button type="submit">Subscribe</button>
+      <button type="button" id="closeModal" class="secondary">Not now</button>
+    </form>
+    <div id="modalStatus" class="status">No submission yet.</div>
+  </div>
+</div><footer>Local training page. Events stay in your browser and are not sent to a real analytics service.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

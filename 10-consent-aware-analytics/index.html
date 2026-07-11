@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 10 — Add Consent-Aware Analytics</title>
+  <link rel="stylesheet" href="../../shared/sample-styles.css" />
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 10</p>
+    <h1>Add Consent-Aware Analytics</h1>
+    <p>Queue events until consent is granted and discard them when consent is rejected.</p>
+  </header>
+<main>
+  <section class="card" id="consentCard">
+    <h2>Analytics preferences</h2>
+    <p>This training page stores the choice locally. It sends nothing to a server.</p>
+    <button id="acceptAnalytics">Accept analytics</button>
+    <button id="rejectAnalytics" class="secondary">Reject analytics</button>
+    <button id="resetConsent" class="secondary">Reset choice</button>
+    <div id="consentStatus" class="status">No choice saved.</div>
+  </section>
+  <section class="card">
+    <h2>Marketing page actions</h2>
+    <button class="marketing-action" data-event="pricing_view">View pricing</button>
+    <button class="marketing-action secondary" data-event="case_study_open">Open case study</button>
+    <button class="marketing-action secondary" data-event="contact_click">Contact sales</button>
+  </section>
+  <section class="card">
+    <h2>Recorded analytics events</h2>
+    <table>
+      <thead><tr><th>#</th><th>Event</th><th>Status</th></tr></thead>
+      <tbody id="eventTable"><tr><td colspan="3">No events recorded.</td></tr></tbody>
+    </table>
+  </section>
+</main><footer>Local training page. Events stay in your browser and are not sent to a real analytics service.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

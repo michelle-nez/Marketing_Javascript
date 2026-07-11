@@ -1,0 +1,21 @@
+        Ticket 01: Track Marketing CTA Clicks
+
+        Scenario
+        A campaign landing page has multiple calls to action. Marketing needs to know which button, placement, and campaign produced each click.
+
+        Concepts
+        querySelectorAll, dataset, addEventListener, dataLayer, objects
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a third CTA in the footer and confirm the same JavaScript tracks it without adding a new event handler.
+
+        Definition of done
+        - 
+Both buttons work- The event name is consistent- Placement and campaign values come from data attributes- No page navigation is required for the local demo

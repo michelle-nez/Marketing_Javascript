@@ -1,0 +1,21 @@
+        Ticket 05: Track Downloads and Outbound Links
+
+        Scenario
+        A resource page contains PDFs, partner links, and internal links. Marketing wants one reusable listener that classifies clicks correctly.
+
+        Concepts
+        event delegation, closest, URL, hostname, file extensions
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a DOCX resource and expand the download check so PDF and DOCX both count as resource downloads.
+
+        Definition of done
+        - 
+PDF is classified as a download- External hostname is classified as outbound- Hash link is classified as internal- Event data includes a human-readable title

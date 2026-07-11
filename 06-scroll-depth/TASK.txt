@@ -1,0 +1,21 @@
+        Ticket 06: Measure Scroll-Depth Engagement
+
+        Scenario
+        Content marketing wants to know whether visitors reach 25%, 50%, 75%, or 100% of a long article, with each milestone counted only once.
+
+        Concepts
+        scroll events, Math, Set, throttling with requestAnimationFrame, milestones
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a 90% milestone and show a visible list of every milestone reached, not just the most recent one.
+
+        Definition of done
+        - 
+Progress bar changes while scrolling- 25/50/75/100 events fire- A milestone never fires twice- The listener is scheduled with requestAnimationFrame

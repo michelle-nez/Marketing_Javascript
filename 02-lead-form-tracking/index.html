@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 02 — Validate and Track a Lead Form</title>
+  <link rel="stylesheet" href="../../shared/sample-styles.css" />
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 02</p>
+    <h1>Validate and Track a Lead Form</h1>
+    <p>Practice a realistic lead-generation form workflow.</p>
+  </header>
+<main>
+  <section class="card">
+    <h2>Request a consultation</h2>
+    <form id="leadForm" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" autocomplete="name" />
+      <label for="email">Work email</label>
+      <input id="email" name="email" type="email" autocomplete="email" />
+      <label for="interest">Primary interest</label>
+      <select id="interest" name="interest">
+        <option value="">Choose one</option>
+        <option value="customer_support">Customer support</option>
+        <option value="document_processing">Document processing</option>
+        <option value="analytics">Analytics</option>
+      </select>
+      <button type="submit">Send request</button>
+    </form>
+    <div id="formStatus" class="status" role="status">Complete the form to begin.</div>
+  </section>
+  <section class="card"><h2>Analytics-safe event</h2><div id="eventLog" class="event-log">No event recorded.</div></section>
+</main><footer>Local training page. Events stay in your browser and are not sent to a real analytics service.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

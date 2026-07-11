@@ -1,0 +1,21 @@
+        Ticket 08: Create a Campaign Countdown
+
+        Scenario
+        A limited-time webinar or offer needs a countdown that remains consistent after refresh, changes the page when expired, and records expiration once.
+
+        Concepts
+        Date, setInterval, time calculations, localStorage, state transitions
+
+        Instructions
+        1. Open index.html in a browser.
+        2. Open script.js in Visual Studio Code or Visual Studio.
+        3. Complete each TODO without copying the answer first.
+        4. Refresh index.html after every change.
+        5. Use the browser console to inspect errors and window.dataLayer.
+
+        Challenge
+        Add a warning style when fewer than two minutes remain and record a campaign_ending_soon event only once.
+
+        Definition of done
+        - 
+Timer counts down every second- Refresh does not restart it- CTA click records an event- Expired state disables the CTA and changes copy
