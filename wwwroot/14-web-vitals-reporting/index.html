@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 14 — Report Core Web Vitals</title>
+  <link rel="stylesheet" href="../shared/sample-styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-79ER3C1LFB');
+  </script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 14</p>
+    <h1>Report Core Web Vitals</h1>
+    <p>This lab simulates metric values instead of measuring a real page, so the classification logic can be tested the same way every time.</p>
+  </header>
+<main>
+  <section class="card">
+    <h2>Page load simulator</h2>
+    <button id="simulateBtn">Simulate page load</button>
+    <div id="metricsReport" class="event-log">No metrics captured yet.</div>
+  </section>
+  <section class="card">
+    <h2>Event inspector</h2>
+    <div id="eventLog" class="event-log">No events recorded yet.</div>
+  </section>
+</main><footer>Local training page. Events stay in your browser and are not sent to a real analytics service.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

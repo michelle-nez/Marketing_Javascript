@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 20 — Live Chat Widget Trigger Logic</title>
+  <link rel="stylesheet" href="../shared/sample-styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-79ER3C1LFB');
+  </script>
+  <style>
+    .chat-bubble {
+      position: fixed; right: 16px; bottom: 16px; max-width: 280px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 20</p>
+    <h1>Live Chat Widget Trigger Logic</h1>
+    <p>Scroll down, or just wait 8 seconds, and the chat bubble should appear once — whichever happens first.</p>
+  </header>
+<main>
+  <section class="card long-copy">
+    <h2>Page content</h2>
+    <p>This filler content makes the page tall enough to test the scroll trigger.</p>
+    <p>Keep scrolling to reach the halfway point of the page.</p>
+    <p>Almost halfway now.</p>
+    <p>This is roughly the middle of the page.</p>
+    <p>Past the middle — the bubble should have appeared by now if it hasn't already.</p>
+    <p>Near the bottom of the page.</p>
+  </section>
+  <section class="card">
+    <h2>Event inspector</h2>
+    <div id="eventLog" class="event-log">No events recorded yet.</div>
+  </section>
+  <div id="chatBubble" class="chat-bubble modal hidden">
+    <p>Need help? Chat with us!</p>
+    <button id="dismissChatBtn" class="secondary">Dismiss</button>
+  </div>
+</main><footer>Local training page. Events stay in your browser and are not sent to a real analytics service.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ticket 26 — Conditional Pixel Loading with Dedupe</title>
+  <link rel="stylesheet" href="../shared/sample-styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-79ER3C1LFB');
+  </script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Marketing JavaScript Lab · Ticket 26</p>
+    <h1>Conditional Pixel Loading with Dedupe</h1>
+    <p>Simulate a single-page app where the same view can re-render more than once — the pixel should still only fire once per page id.</p>
+  </header>
+<main>
+  <section class="card">
+    <h2>Consent</h2>
+    <label><input type="checkbox" id="marketingConsentCheck" style="width:auto; display:inline-block;" /> Marketing consent granted</label>
+  </section>
+  <section class="card">
+    <h2>Simulated SPA navigation</h2>
+    <p id="currentPageLabel" class="status">Current page: none</p>
+    <button id="newRouteBtn">Simulate new route change</button>
+    <button id="rerenderBtn" class="secondary">Re-render current route</button>
+  </section>
+  <section class="card">
+    <h2>Event inspector</h2>
+    <div id="eventLog" class="event-log">No events recorded yet.</div>
+  </section>
+</main><footer>Local training page. Events stay in your browser and are not sent to a real analytics service.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
