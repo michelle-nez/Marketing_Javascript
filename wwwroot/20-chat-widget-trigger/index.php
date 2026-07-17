@@ -5,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ticket 20 — Live Chat Widget Trigger Logic</title>
   <link rel="stylesheet" href="../shared/sample-styles.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-79ER3C1LFB');
-  </script>
+  <?php include '../shared/head-tag.php'; ?>
   <style>
     .chat-bubble {
       position: fixed; right: 16px; bottom: 16px; max-width: 280px;

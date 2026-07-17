@@ -5,15 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Marketing JavaScript Lab — GA4 Live Test</title>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-79ER3C1LFB');
-  </script>
+  <?php include 'shared/head-tag.php'; ?>
   <style>
     :root {
       --ink: #1c2430;
@@ -128,7 +120,7 @@
     <h1>Marketing JavaScript Lab</h1>
     <p>26 hands-on GA4 tracking tickets. Every page below shares one live Google tag so events roll up into a single GA4
       property for testing.</p>
-    <span class="tag-badge">Google tag: G-DTH6N9ZNFE</span>
+    <span class="tag-badge">Google tag: G-79ER3C1LFB</span>
   </header>
   <main>
     <div class="grid">

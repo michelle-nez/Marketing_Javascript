@@ -5,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ticket 07 — Run a Simple Headline A/B Test</title>
   <link rel="stylesheet" href="../shared/sample-styles.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-79ER3C1LFB');
-  </script>
+  <?php include '../shared/head-tag.php'; ?>
 </head>
 <body>
   <header>

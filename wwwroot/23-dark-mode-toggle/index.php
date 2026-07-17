@@ -5,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ticket 23 — Dark Mode Toggle with Persistence</title>
   <link rel="stylesheet" href="../shared/sample-styles.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-79ER3C1LFB');
-  </script>
+  <?php include '../shared/head-tag.php'; ?>
   <style>
     html[data-theme="dark"] body { background: #0f1420; color: #e7ecf5; }
     html[data-theme="dark"] .card { background: #171e2c; border-color: #2a3549; }

@@ -5,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ticket 18 — Social Proof Activity Toast</title>
   <link rel="stylesheet" href="../shared/sample-styles.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79ER3C1LFB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-79ER3C1LFB');
-  </script>
+  <?php include '../shared/head-tag.php'; ?>
   <style>
     .toast-container { position: fixed; left: 16px; bottom: 16px; max-width: 320px; }
   </style>
